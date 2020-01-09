@@ -1,0 +1,19 @@
+{
+  "name": "Full-Stack-TBD",
+  "version": "1.0.0",
+  "description": "Full-Stack-Clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreskimlee/MERN-Fullstack.git"
+  },
+  "author": "Andres Kim Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreskimlee/MERN-Fullstack/issues"
+  },
+  "homepage": "https://github.com/andreskimlee/MERN-Fullstack#readme"
+}
