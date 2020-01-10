@@ -4,7 +4,8 @@
   "description": "Full-Stack-Clone",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "server": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
