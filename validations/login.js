@@ -17,11 +17,13 @@ module.exports = function(data) {
     if (validator.isEmpty(data.password)) {
         errors.password = "Email field is required"
     }
+
+    return {
+        errors: errors,
+        isValid: Object.keys(errors).length === 0 
+    }
+    
     
 }
 
-return {
-    errors,
-    isValid: Object.keys(errors).length === 0 
-}
 

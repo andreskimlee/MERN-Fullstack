@@ -4,10 +4,11 @@ const bcrypt = require('bcryptjs'); // import hasher for registration / pw
 const User = require('../../models/User'); // import user model
 const keys = require('../../config/keys');
 const passport = require('passport');
+const validateRegisterInput = require('../../validations/register')
+const validateLoginInput = require('../../validations/login')
+
 
 router.get("/test", (req, res) => res.json({ msg: "This is the users route" }));
-
-users.js
 router.post("/register", (req, res) => {
   const { errors, isValid } = validateRegisterInput(req.body);
 
