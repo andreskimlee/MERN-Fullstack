@@ -14,5 +14,4 @@ router.post("/",
     })
 module.exports = router;
 
-
-
+router.get("/")
