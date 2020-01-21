@@ -5,7 +5,7 @@ const PhotoSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
     ref: 'users'
-  },
+  }, 
   photoURL: {
     type: String,
     required: true
@@ -18,6 +18,10 @@ const PhotoSchema = new Schema({
     default: Date.now
   },
 
+  // isDeleted: { // come back to it verify naming convention. 
+  //   type: Boolean,  
+  // }
+
 });
 
-module.exports = Tweet = mongoose.model('tweet', PhotoSchema);
+module.exports = Tweet = mongoose.model('photo', PhotoSchema);
