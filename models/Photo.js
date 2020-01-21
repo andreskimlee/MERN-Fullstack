@@ -6,13 +6,18 @@ const PhotoSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'users'
   },
+  photoURL: {
+    type: String,
+    required: true
+  },
   text: {
     type: String,
   },
   date: {
     type: Date,
     default: Date.now
-  }  
+  },
+
 });
 
 module.exports = Tweet = mongoose.model('tweet', PhotoSchema);
