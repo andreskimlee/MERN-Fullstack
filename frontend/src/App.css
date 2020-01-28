@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 5000px;
+}
+
+
+.false {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.true {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.world-map-container {
+  position: relative;
+}
+.App-logo-false {
+  width: 20%;
+  animation-play-state: paused;
+}
+
+.App-logo-true {
+  width: 20%;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0; 
+  }
+  
+  100% {
+    left: 0px;
+    top: 0;
+  }
+}
+.world-map {
+  width: 80%;
+  position: relative;
+}
+
+.hong-kong {
+  position: absolute;
+  top: 136px;
+  left: 921px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.wrapper {
+	text-align: center;
+		color: #fff;
+    font-size: 28px;
+		font-family: 'Fredoka One', cursive;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: 'Fredoka One', cursive;
+    background: #8ee000;
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 1.5s linear infinite;
+		display: inline-block;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+.select-country-text{
+  font-size: 46px;
+  margin: 10px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 900;
+}
+
+.select-country-text-2{
+  font-size: 25px;
+  font-family: 'Fredoka One', cursive;
+  color: #82d300; 
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ff8080;
+  border-radius: 50%;
+  display: inline-block;
+  /* left: 0; */
+  left: 352px;
+  top: 166px;
+  position: absolute;
+}
+
+
+.map-marker-hong-kong {
+  width: 20%;
+  margin-left: 80px;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #82d300;
+  border-radius: .4em;
+  width: 200px;
+  height: 20px;
+  font-size: 15px;
+  top: -406px;
+  left: 263px;
+  font-family: 'Fredoka One', cursive;
+}
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 7px;
+    border: 14px solid transparent;
+    border-top-color: #82d300;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -4px;
+    margin-bottom: -20px;
+}
+
+
+.App-header {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.popuptext-false {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+
+/* Toggle this class - hide and show the popup */
+.popuptext-true {
+  visibility: visible;
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
+  padding: 10px;
+  background: #78c800;
+  border-radius: 15px;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.bottom-container {
+  display: flex;
+  width: auto;
+  font-family: 'Fredoka One', cursive;
+  width: 785px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/* .user-video-true {
+  position: absolute;
+  margin-left: 100px;
+  border: 2px solid #78c800;
+  border-radius: 5px;
+  width: 671px;
+  margin-top: 100px;
+  padding: 0px; */
+/* } */
+
+.embed-responsive-item {
+    position: absolute;
+    width: 600px;
+    height: 449px;
+    margin-left: 100px;
+    border: 6px solid #78c800;
+    border-radius: 10px;
+    margin-top: 1000px;
+    
+}
+
+#peerVideo {
+  width:600px;
+  height: 449px;
+  margin-left: 739px;
+  border: 6px solid #78c800;
+  border-radius: 10px;
+  margin-top: 1000px;
+}
+
+.test {
+  margin-top: 500px
+}
+
+.App-logo-2 {
+  width: 25%;
+}
+
+.translate {
+  position: absolute;
+  display: flex;
+  margin-top: 181px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.friend-text {
+  position: absolute;
+  margin-top: 100px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.friend-text::after{
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  position: relative;
+  border-right:10px solid blue; 
+}
